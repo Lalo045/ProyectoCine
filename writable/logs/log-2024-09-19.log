@@ -1,0 +1,754 @@
+CRITICAL - 2024-09-19 02:08:59 --> ErrorException: Undefined variable $ventas
+[Method: GET, Route: ventas]
+in APPPATH\Views\ventas\show.php on line 21.
+ 1 APPPATH\Views\ventas\show.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ventas', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\show.php', 21)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/show', [], true)
+ 5 APPPATH\Controllers\Ventas.php(17): view('ventas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-19 02:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-19 02:45:35 --> Error: Class "App\Controllers\ClientesModel" not found
+[Method: GET, Route: ventas/add/]
+in APPPATH\Controllers\Ventas.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 02:46:07 --> Error: Class "App\Controllers\ClienteM" not found
+[Method: GET, Route: ventas/add/]
+in APPPATH\Controllers\Ventas.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 02:46:27 --> Error: Class "App\Controllers\ClienteM" not found
+[Method: GET, Route: ventas/add/]
+in APPPATH\Controllers\Ventas.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 02:46:30 --> Error: Class "App\Controllers\ClienteM" not found
+[Method: GET, Route: ventas/add/]
+in APPPATH\Controllers\Ventas.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-19 02:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-19 02:51:24 --> ErrorException: Undefined variable $clientes
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 15.
+ 1 APPPATH\Views\ventas\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientes', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(24): view('ventas/add')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-19 02:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-19 02:51:43 --> ErrorException: Undefined variable $clientesD
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 15.
+ 1 APPPATH\Views\ventas\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientesD', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(24): view('ventas/add')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-19 02:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-19 02:51:57 --> ErrorException: Undefined variable $clienteD
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 15.
+ 1 APPPATH\Views\ventas\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clienteD', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(24): view('ventas/add')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-19 03:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 03:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 03:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 03:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 05:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-19 06:15:05 --> ErrorException: Undefined property: stdClass::$noAsiento
+[Method: GET, Route: ventas]
+in APPPATH\Views\ventas\show.php on line 28.
+ 1 APPPATH\Views\ventas\show.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$noAsiento', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\show.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/show', [], true)
+ 5 APPPATH\Controllers\Ventas.php(17): view('ventas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-19 06:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 06:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-19 06:44:09 --> ErrorException: Undefined property: stdClass::$nombrePelicula
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 68.
+ 1 APPPATH\Views\ventas\add.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombrePelicula', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(33): view('ventas/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-19 06:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 19:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 19:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 19:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 19:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-19 20:12:24 --> ErrorException: Attempt to read property "nombre" on string
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 24.
+ 1 APPPATH\Views\funciones\show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on string', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [], true)
+ 5 APPPATH\Controllers\Funciones.php(19): view('funciones/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 20:12:25 --> ErrorException: Attempt to read property "nombre" on string
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 24.
+ 1 APPPATH\Views\funciones\show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on string', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [], true)
+ 5 APPPATH\Controllers\Funciones.php(19): view('funciones/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 20:15:12 --> ErrorException: Attempt to read property "nombre" on string
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 24.
+ 1 APPPATH\Views\funciones\show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on string', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [...], true)
+ 5 APPPATH\Controllers\Funciones.php(27): view('funciones/show', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 20:15:13 --> ErrorException: Attempt to read property "nombre" on string
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 24.
+ 1 APPPATH\Views\funciones\show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on string', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [...], true)
+ 5 APPPATH\Controllers\Funciones.php(27): view('funciones/show', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 20:15:14 --> ErrorException: Attempt to read property "nombre" on string
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 24.
+ 1 APPPATH\Views\funciones\show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on string', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [...], true)
+ 5 APPPATH\Controllers\Funciones.php(27): view('funciones/show', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 20:16:49 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 41.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [...], true)
+ 3 APPPATH\Controllers\Funciones.php(27): view('funciones/show', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 20:17:01 --> ErrorException: Undefined variable $peliculasD
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 22.
+ 1 APPPATH\Views\funciones\show.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peliculasD', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [...], true)
+ 5 APPPATH\Controllers\Funciones.php(27): view('funciones/show', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 20:18:09 --> ErrorException: Undefined variable $peliculasD
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 25.
+ 1 APPPATH\Views\funciones\show.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peliculasD', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [...], true)
+ 5 APPPATH\Controllers\Funciones.php(27): view('funciones/show', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 20:26:02 --> ErrorException: Undefined variable $peliculasD
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 22.
+ 1 APPPATH\Views\funciones\show.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peliculasD', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [...], true)
+ 5 APPPATH\Controllers\Funciones.php(27): view('funciones/show', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-19 20:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 20:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-19 23:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-19 23:30:40 --> ErrorException: Undefined property: App\Controllers\Funciones::$load
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 21.
+ 1 APPPATH\Controllers\Funciones.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Funciones::$load', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Funciones.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:31:29 --> ErrorException: Undefined property: App\Controllers\Funciones::$load
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 21.
+ 1 APPPATH\Controllers\Funciones.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Funciones::$load', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Funciones.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:31:30 --> ErrorException: Undefined property: App\Controllers\Funciones::$load
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 21.
+ 1 APPPATH\Controllers\Funciones.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Funciones::$load', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Funciones.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:31:31 --> ErrorException: Undefined property: App\Controllers\Funciones::$load
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 21.
+ 1 APPPATH\Controllers\Funciones.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Funciones::$load', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Funciones.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:32:02 --> ErrorException: Undefined property: App\Controllers\Funciones::$load
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 21.
+ 1 APPPATH\Controllers\Funciones.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Funciones::$load', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Funciones.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:32:03 --> ErrorException: Undefined property: App\Controllers\Funciones::$load
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 21.
+ 1 APPPATH\Controllers\Funciones.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Funciones::$load', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Funciones.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:32:29 --> ErrorException: Undefined property: App\Controllers\Funciones::$load
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 21.
+ 1 APPPATH\Controllers\Funciones.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Funciones::$load', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Funciones.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+ERROR - 2024-09-19 23:35:28 --> mysqli_sql_exception: Table 'cine.peliculas' doesn't exist in C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `funcion...', 0)
+#1 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funcion...')
+#2 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funcion...')
+#3 C:\xampp\htdocs\TrabajoCine\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funcion...', Array, false)
+#4 C:\xampp\htdocs\TrabajoCine\app\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TrabajoCine\app\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+#6 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(933): App\Controllers\Funciones->index()
+#7 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+#8 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TrabajoCine\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TrabajoCine\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\TrabajoCine\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\TrabajoCine\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-09-19 23:35:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cine.peliculas' doesn't exist
+[Method: GET, Route: funciones]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 2 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:35:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cine.peliculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 4 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:35:28 --> [Caused by] mysqli_sql_exception: Table 'cine.peliculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 5 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+ERROR - 2024-09-19 23:35:29 --> mysqli_sql_exception: Table 'cine.peliculas' doesn't exist in C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `funcion...', 0)
+#1 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funcion...')
+#2 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funcion...')
+#3 C:\xampp\htdocs\TrabajoCine\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funcion...', Array, false)
+#4 C:\xampp\htdocs\TrabajoCine\app\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TrabajoCine\app\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+#6 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(933): App\Controllers\Funciones->index()
+#7 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+#8 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TrabajoCine\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TrabajoCine\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\TrabajoCine\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\TrabajoCine\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-09-19 23:35:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cine.peliculas' doesn't exist
+[Method: GET, Route: funciones]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 2 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:35:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cine.peliculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 4 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:35:29 --> [Caused by] mysqli_sql_exception: Table 'cine.peliculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 5 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+ERROR - 2024-09-19 23:35:41 --> mysqli_sql_exception: Table 'cine.peliculas' doesn't exist in C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `funcion...', 0)
+#1 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funcion...')
+#2 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funcion...')
+#3 C:\xampp\htdocs\TrabajoCine\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funcion...', Array, false)
+#4 C:\xampp\htdocs\TrabajoCine\app\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TrabajoCine\app\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+#6 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(933): App\Controllers\Funciones->index()
+#7 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+#8 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TrabajoCine\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TrabajoCine\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\TrabajoCine\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\TrabajoCine\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-09-19 23:35:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cine.peliculas' doesn't exist
+[Method: GET, Route: funciones]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 2 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:35:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cine.peliculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 4 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:35:41 --> [Caused by] mysqli_sql_exception: Table 'cine.peliculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 5 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+ERROR - 2024-09-19 23:36:23 --> mysqli_sql_exception: Table 'cine.peliculas' doesn't exist in C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `funcion...', 0)
+#1 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funcion...')
+#2 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funcion...')
+#3 C:\xampp\htdocs\TrabajoCine\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funcion...', Array, false)
+#4 C:\xampp\htdocs\TrabajoCine\app\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TrabajoCine\app\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+#6 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(933): App\Controllers\Funciones->index()
+#7 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+#8 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TrabajoCine\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TrabajoCine\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\TrabajoCine\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\TrabajoCine\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-09-19 23:36:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cine.peliculas' doesn't exist
+[Method: GET, Route: funciones]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 2 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:36:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cine.peliculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 4 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:36:23 --> [Caused by] mysqli_sql_exception: Table 'cine.peliculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `funciones`.`idFuncion`, `peliculas`.`nombre` as `nombrePelicula`, `salas`.`numero` as `numeroSala`, `salas`.`tipo` as `tipoSala`, `funciones`.`formato`, `funciones`.`horario`, `funciones`.`fecha`
+FROM `Funcion`
+JOIN `peliculas` ON `funciones`.`idPelicula` = `peliculas`.`idPelicula`
+JOIN `salas` ON `funciones`.`idSala` = `salas`.`idSala`', [], false)
+ 5 APPPATH\Models\FuncionM.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Funciones.php(22): App\Models\FuncionM->getFuncionesConDetalles()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:38:38 --> ParseError: Unmatched '}'
+[Method: GET, Route: funciones]
+in APPPATH\Models\FuncionM.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FuncionM')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FuncionM')
+ 4 SYSTEMPATH\Config\Factories.php(290): class_exists('App\\Models\\FuncionM')
+ 5 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'FuncionM')
+ 6 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'FuncionM', [...])
+ 7 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\Funciones.php(12): model('FuncionM')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-19 23:38:43 --> ParseError: Unmatched '}'
+[Method: GET, Route: funciones]
+in APPPATH\Models\FuncionM.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FuncionM')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FuncionM')
+ 4 SYSTEMPATH\Config\Factories.php(290): class_exists('App\\Models\\FuncionM')
+ 5 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'FuncionM')
+ 6 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'FuncionM', [...])
+ 7 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\Funciones.php(12): model('FuncionM')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-19 23:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

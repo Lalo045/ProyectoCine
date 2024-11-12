@@ -1,0 +1,954 @@
+ERROR - 2024-09-26 00:58:18 --> mysqli_sql_exception: Unknown column 'pelicula.titulo' in 'field list' in C:\xampp\htdocs\TrabajoCine 2.0\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT funcion....', 0)
+#1 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT funcion....')
+#2 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT funcion....')
+#3 C:\xampp\htdocs\TrabajoCine 2.0\app\Models\FuncionM.php(51): CodeIgniter\Database\BaseConnection->query('SELECT funcion....')
+#4 C:\xampp\htdocs\TrabajoCine 2.0\app\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+#5 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(933): App\Controllers\Funciones->index()
+#6 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+#7 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TrabajoCine 2.0\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TrabajoCine 2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\TrabajoCine 2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\TrabajoCine 2.0\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-26 00:58:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pelicula.titulo' in 'field list'
+[Method: GET, Route: funciones]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\FuncionM.php(51): CodeIgniter\Database\BaseConnection->query('SELECT funcion.*, pelicula.titulo AS pelicula, sala.numeroSala AS sala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 2 APPPATH\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 00:58:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pelicula.titulo' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT funcion.*, pelicula.titulo AS pelicula, sala.numeroSala AS sala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT funcion.*, pelicula.titulo AS pelicula, sala.numeroSala AS sala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 3 APPPATH\Models\FuncionM.php(51): CodeIgniter\Database\BaseConnection->query('SELECT funcion.*, pelicula.titulo AS pelicula, sala.numeroSala AS sala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 4 APPPATH\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 00:58:18 --> [Caused by] mysqli_sql_exception: Unknown column 'pelicula.titulo' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT funcion.*, pelicula.titulo AS pelicula, sala.numeroSala AS sala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT funcion.*, pelicula.titulo AS pelicula, sala.numeroSala AS sala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT funcion.*, pelicula.titulo AS pelicula, sala.numeroSala AS sala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 4 APPPATH\Models\FuncionM.php(51): CodeIgniter\Database\BaseConnection->query('SELECT funcion.*, pelicula.titulo AS pelicula, sala.numeroSala AS sala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 5 APPPATH\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+ERROR - 2024-09-26 01:01:41 --> mysqli_sql_exception: Unknown column 'pelicula.nombrePelicula' in 'field list' in C:\xampp\htdocs\TrabajoCine 2.0\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT funcion....', 0)
+#1 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT funcion....')
+#2 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT funcion....')
+#3 C:\xampp\htdocs\TrabajoCine 2.0\app\Models\FuncionM.php(52): CodeIgniter\Database\BaseConnection->query('SELECT funcion....')
+#4 C:\xampp\htdocs\TrabajoCine 2.0\app\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+#5 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(933): App\Controllers\Funciones->index()
+#6 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+#7 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TrabajoCine 2.0\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TrabajoCine 2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\TrabajoCine 2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\TrabajoCine 2.0\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-26 01:01:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pelicula.nombrePelicula' in 'field list'
+[Method: GET, Route: funciones]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\FuncionM.php(52): CodeIgniter\Database\BaseConnection->query('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 2 APPPATH\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:01:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pelicula.nombrePelicula' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 3 APPPATH\Models\FuncionM.php(52): CodeIgniter\Database\BaseConnection->query('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 4 APPPATH\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:01:41 --> [Caused by] mysqli_sql_exception: Unknown column 'pelicula.nombrePelicula' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 4 APPPATH\Models\FuncionM.php(52): CodeIgniter\Database\BaseConnection->query('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 5 APPPATH\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+ERROR - 2024-09-26 01:01:42 --> mysqli_sql_exception: Unknown column 'pelicula.nombrePelicula' in 'field list' in C:\xampp\htdocs\TrabajoCine 2.0\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT funcion....', 0)
+#1 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT funcion....')
+#2 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT funcion....')
+#3 C:\xampp\htdocs\TrabajoCine 2.0\app\Models\FuncionM.php(52): CodeIgniter\Database\BaseConnection->query('SELECT funcion....')
+#4 C:\xampp\htdocs\TrabajoCine 2.0\app\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+#5 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(933): App\Controllers\Funciones->index()
+#6 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+#7 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\TrabajoCine 2.0\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\TrabajoCine 2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\TrabajoCine 2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\TrabajoCine 2.0\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-26 01:01:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pelicula.nombrePelicula' in 'field list'
+[Method: GET, Route: funciones]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\FuncionM.php(52): CodeIgniter\Database\BaseConnection->query('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 2 APPPATH\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:01:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pelicula.nombrePelicula' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 3 APPPATH\Models\FuncionM.php(52): CodeIgniter\Database\BaseConnection->query('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 4 APPPATH\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:01:42 --> [Caused by] mysqli_sql_exception: Unknown column 'pelicula.nombrePelicula' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 4 APPPATH\Models\FuncionM.php(52): CodeIgniter\Database\BaseConnection->query('SELECT funcion.*, pelicula.nombrePelicula AS nombrePelicula, sala.numeroSala AS numeroSala, sala.cantidadAsientos
+                FROM funcion
+                JOIN pelicula ON funcion.idPelicula = pelicula.idPelicula
+                JOIN sala ON funcion.idSala = sala.idSala')
+ 5 APPPATH\Controllers\Funciones.php(10): App\Models\FuncionM->getFunciones()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:09:34 --> Error: Call to undefined function validation_list_errors()
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 5.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 4 APPPATH\Controllers\Funciones.php(30): view('funciones/add', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:15:47 --> Error: Call to undefined function validation_list_errors()
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 5.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 4 APPPATH\Controllers\Funciones.php(30): view('funciones/add', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 01:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 01:16:34 --> ErrorException: Undefined variable $peliculasD
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 15.
+ 1 APPPATH\Views\funciones\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peliculasD', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 5 APPPATH\Controllers\Funciones.php(34): view('funciones/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 01:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 01:24:07 --> ErrorException: Undefined variable $peliculasD
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 15.
+ 1 APPPATH\Views\funciones\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peliculasD', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 5 APPPATH\Controllers\Funciones.php(34): view('funciones/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:24:55 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 34.
+ 1 APPPATH\Controllers\Funciones.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Funciones.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:24:57 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 34.
+ 1 APPPATH\Controllers\Funciones.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Funciones.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:24:58 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 34.
+ 1 APPPATH\Controllers\Funciones.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Funciones.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 01:25:23 --> ErrorException: Undefined variable $funciones
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 24.
+ 1 APPPATH\Views\funciones\show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $funciones', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\show.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [], true)
+ 5 APPPATH\Controllers\Funciones.php(46): view('funciones/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 01:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 01:25:51 --> ErrorException: Undefined variable $peliculasD
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 15.
+ 1 APPPATH\Views\funciones\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peliculasD', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 5 APPPATH\Controllers\Funciones.php(61): view('funciones/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 01:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 01:26:44 --> ErrorException: Undefined variable $peliculasD
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 15.
+ 1 APPPATH\Views\funciones\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peliculasD', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 5 APPPATH\Controllers\Funciones.php(61): view('funciones/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 01:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 01:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 01:48:37 --> ErrorException: Undefined variable $peliculasD
+[Method: POST, Route: funciones/insert]
+in APPPATH\Views\funciones\add.php on line 15.
+ 1 APPPATH\Views\funciones\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peliculasD', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\funciones\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 5 APPPATH\Controllers\Funciones.php(82): view('funciones/add')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 02:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 02:08:58 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: salas/edit/2]
+in APPPATH\Views\salas\edit.php on line 8.
+ 1 APPPATH\Views\salas\edit.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\salas\\edit.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\salas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('salas/edit', [], true)
+ 5 APPPATH\Controllers\Salas.php(85): view('salas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 02:09:08 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: salas/edit/2]
+in APPPATH\Views\salas\edit.php on line 8.
+ 1 APPPATH\Views\salas\edit.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\salas\\edit.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\salas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('salas/edit', [], true)
+ 5 APPPATH\Controllers\Salas.php(85): view('salas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 02:11:25 --> ErrorException: Undefined array key "numeroSala"
+[Method: POST, Route: salas/update]
+in APPPATH\Controllers\Salas.php on line 93.
+ 1 APPPATH\Controllers\Salas.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numeroSala"', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Salas.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 02:14:50 --> ErrorException: Undefined array key "numeroSala"
+[Method: POST, Route: salas/update]
+in APPPATH\Controllers\Salas.php on line 93.
+ 1 APPPATH\Controllers\Salas.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numeroSala"', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Salas.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 02:18:19 --> ErrorException: Undefined array key "numeroSala"
+[Method: POST, Route: salas/update]
+in APPPATH\Controllers\Salas.php on line 93.
+ 1 APPPATH\Controllers\Salas.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numeroSala"', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Salas.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 02:19:11 --> ErrorException: Undefined array key "numeroSala"
+[Method: POST, Route: salas/update]
+in APPPATH\Controllers\Salas.php on line 93.
+ 1 APPPATH\Controllers\Salas.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "numeroSala"', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Salas.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 02:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 02:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 02:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 02:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 02:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 03:03:56 --> ErrorException: Undefined property: stdClass::$cantidadAsientos
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 16.
+ 1 APPPATH\Views\ventas\add.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cantidadAsientos', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 03:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 03:14:33 --> ErrorException: Undefined property: stdClass::$cantidadAsientos
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 16.
+ 1 APPPATH\Views\ventas\add.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cantidadAsientos', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 03:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 05:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 05:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 05:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 05:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 05:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 05:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 06:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 06:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 06:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 06:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 06:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 06:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 06:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 06:37:35 --> ErrorException: Undefined property: stdClass::$asientosVendidos
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 15.
+ 1 APPPATH\Views\ventas\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$asientosVendidos', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 06:37:45 --> ErrorException: Undefined variable $idVenta
+[Method: GET, Route: ventas/edit/2]
+in APPPATH\Views\ventas\edit.php on line 12.
+ 1 APPPATH\Views\ventas\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(126): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 06:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 06:37:49 --> ErrorException: Undefined property: stdClass::$asientosVendidos
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 15.
+ 1 APPPATH\Views\ventas\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$asientosVendidos', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 06:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 06:38:10 --> ErrorException: Undefined property: stdClass::$asientosVendidos
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 15.
+ 1 APPPATH\Views\ventas\add.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$asientosVendidos', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 06:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 06:54:14 --> ErrorException: Undefined variable $asientos
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 61.
+ 1 APPPATH\Views\ventas\add.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asientos', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php', 61)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(65): view('ventas/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+ERROR - 2024-09-26 06:56:58 --> mysqli_sql_exception: Unknown column 'asientos.deleted_at' in 'where clause' in C:\xampp\htdocs\TrabajoCine 2.0\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TrabajoCine 2.0\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TrabajoCine 2.0\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TrabajoCine 2.0\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TrabajoCine 2.0\app\Controllers\Ventas.php(61): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(933): App\Controllers\Ventas->add()
+#8 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#9 C:\xampp\htdocs\TrabajoCine 2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TrabajoCine 2.0\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TrabajoCine 2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\TrabajoCine 2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\TrabajoCine 2.0\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-09-26 06:56:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'asientos.deleted_at' in 'where clause'
+[Method: GET, Route: ventas/add/]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asientos`
+WHERE `asientos`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Ventas.php(61): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 06:56:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'asientos.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asientos`
+WHERE `asientos`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asientos`
+WHERE `asientos`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asientos`
+WHERE `asientos`.`deleted_at` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Ventas.php(61): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 06:56:58 --> [Caused by] mysqli_sql_exception: Unknown column 'asientos.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `asientos`
+WHERE `asientos`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asientos`
+WHERE `asientos`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asientos`
+WHERE `asientos`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asientos`
+WHERE `asientos`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Ventas.php(61): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 06:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 06:57:59 --> ErrorException: Undefined variable $asientos
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 61.
+ 1 APPPATH\Views\ventas\add.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asientos', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php', 61)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(68): view('ventas/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 06:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 07:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 07:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 07:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 15:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 15:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 15:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 15:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 16:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 16:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 16:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 16:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-26 16:42:32 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Ventas.php on line 78.
+ 1 APPPATH\Controllers\Ventas.php(78): explode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 16:42:32 --> ErrorException: Undefined property: App\Controllers\Ventas::$db
+[Method: POST, Route: ventas/insert]
+in APPPATH\Controllers\Ventas.php on line 82.
+ 1 APPPATH\Controllers\Ventas.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$db', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Ventas.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+WARNING - 2024-09-26 16:43:01 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Ventas.php on line 79.
+ 1 APPPATH\Controllers\Ventas.php(79): explode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 16:43:01 --> ErrorException: Undefined property: App\Controllers\Ventas::$db
+[Method: POST, Route: ventas/insert]
+in APPPATH\Controllers\Ventas.php on line 83.
+ 1 APPPATH\Controllers\Ventas.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$db', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Ventas.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 16:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-26 16:43:05 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Ventas.php on line 79.
+ 1 APPPATH\Controllers\Ventas.php(79): explode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 16:43:05 --> ErrorException: Undefined property: App\Controllers\Ventas::$db
+[Method: POST, Route: ventas/insert]
+in APPPATH\Controllers\Ventas.php on line 83.
+ 1 APPPATH\Controllers\Ventas.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$db', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Ventas.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 16:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-26 16:44:25 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Ventas.php on line 79.
+ 1 APPPATH\Controllers\Ventas.php(79): explode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 16:44:25 --> ErrorException: Undefined property: App\Controllers\Ventas::$db
+[Method: POST, Route: ventas/insert]
+in APPPATH\Controllers\Ventas.php on line 83.
+ 1 APPPATH\Controllers\Ventas.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$db', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Ventas.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+WARNING - 2024-09-26 16:45:25 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Ventas.php on line 79.
+ 1 APPPATH\Controllers\Ventas.php(79): explode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 16:45:25 --> ErrorException: Undefined property: App\Controllers\Ventas::$db
+[Method: POST, Route: ventas/insert]
+in APPPATH\Controllers\Ventas.php on line 83.
+ 1 APPPATH\Controllers\Ventas.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$db', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Controllers\\Ventas.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 17:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 17:13:34 --> ErrorException: Undefined variable $idVenta
+[Method: GET, Route: ventas/edit/1]
+in APPPATH\Views\ventas\edit.php on line 12.
+ 1 APPPATH\Views\ventas\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(129): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 19:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 19:32:30 --> Error: Call to a member function where() on null
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 31.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [], true)
+ 4 APPPATH\Controllers\Funciones.php(46): view('funciones/show', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 19:39:26 --> ParseError: syntax error, unexpected token "->"
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 29.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [], true)
+ 3 APPPATH\Controllers\Funciones.php(46): view('funciones/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 19:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 19:43:01 --> Error: Call to a member function where() on null
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 29.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [], true)
+ 4 APPPATH\Controllers\Funciones.php(46): view('funciones/show', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 19:44:35 --> Error: Call to a member function where() on null
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 29.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [], true)
+ 4 APPPATH\Controllers\Funciones.php(46): view('funciones/show', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 19:44:40 --> Error: Call to a member function where() on null
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 29.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [], true)
+ 4 APPPATH\Controllers\Funciones.php(46): view('funciones/show', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+CRITICAL - 2024-09-26 19:46:56 --> Error: Call to a member function where() on null
+[Method: GET, Route: funciones]
+in APPPATH\Views\funciones\show.php on line 29.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/show', [], true)
+ 4 APPPATH\Controllers\Funciones.php(46): view('funciones/show', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 19:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 19:53:27 --> ErrorException: Undefined variable $idVenta
+[Method: GET, Route: ventas/edit/1]
+in APPPATH\Views\ventas\edit.php on line 12.
+ 1 APPPATH\Views\ventas\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(129): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 19:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 19:56:12 --> ErrorException: Undefined variable $idVenta
+[Method: GET, Route: ventas/edit/1]
+in APPPATH\Views\ventas\edit.php on line 12.
+ 1 APPPATH\Views\ventas\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine 2.0\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(129): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine 2.0\\public\\index.php')
+INFO - 2024-09-26 20:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

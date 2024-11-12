@@ -1,0 +1,681 @@
+INFO - 2024-09-22 00:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 00:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 00:37:22 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: salas]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-09-22 00:37:25 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'cine', 3306, '', 0)
+#1 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TrabajoCine\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TrabajoCine\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TrabajoCine\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TrabajoCine\app\Controllers\Salas.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(933): App\Controllers\Salas->index()
+#8 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+#9 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TrabajoCine\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TrabajoCine\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\TrabajoCine\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\TrabajoCine\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TrabajoCine\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TrabajoCine\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TrabajoCine\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TrabajoCine\app\Controllers\Salas.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(933): App\Controllers\Salas->index()
+#7 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+#8 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TrabajoCine\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TrabajoCine\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\TrabajoCine\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\TrabajoCine\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-09-22 00:37:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: salas]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Sala`
+WHERE `Sala`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Salas.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 00:37:26 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: salas]
+in APPPATH\Views\salas\show.php on line 26.
+ 1 APPPATH\Views\salas\show.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('salas/show', [], true)
+ 5 APPPATH\Controllers\Salas.php(20): view('salas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 00:37:26 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: salas]
+in APPPATH\Views\salas\show.php on line 26.
+ 1 APPPATH\Views\salas\show.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('salas/show', [], true)
+ 5 APPPATH\Controllers\Salas.php(20): view('salas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 00:37:26 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: salas]
+in APPPATH\Views\salas\show.php on line 26.
+ 1 APPPATH\Views\salas\show.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('salas/show', [], true)
+ 5 APPPATH\Controllers\Salas.php(20): view('salas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 00:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 01:21:05 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: salas]
+in APPPATH\Views\salas\show.php on line 26.
+ 1 APPPATH\Views\salas\show.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('salas/show', [], true)
+ 5 APPPATH\Controllers\Salas.php(20): view('salas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 01:21:10 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: salas]
+in APPPATH\Views\salas\show.php on line 26.
+ 1 APPPATH\Views\salas\show.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('salas/show', [], true)
+ 5 APPPATH\Controllers\Salas.php(20): view('salas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 01:21:10 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: salas]
+in APPPATH\Views\salas\show.php on line 26.
+ 1 APPPATH\Views\salas\show.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\salas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('salas/show', [], true)
+ 5 APPPATH\Controllers\Salas.php(20): view('salas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Salas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 01:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 01:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 01:38:59 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 31.
+ 1 APPPATH\Views\funciones\add.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\add.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 5 APPPATH\Controllers\Funciones.php(29): view('funciones/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 01:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 01:48:24 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 31.
+ 1 APPPATH\Views\funciones\add.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\add.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 5 APPPATH\Controllers\Funciones.php(29): view('funciones/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 01:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 02:08:25 --> Error: Undefined constant "numeroSala"
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 36.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 4 APPPATH\Controllers\Funciones.php(29): view('funciones/add', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 02:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 02:10:06 --> Error: Undefined constant "console"
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 33.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 4 APPPATH\Controllers\Funciones.php(29): view('funciones/add', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 02:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 02:47:51 --> ErrorException: include(SalaM.php): Failed to open stream: No such file or directory
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 110.
+ 1 APPPATH\Views\funciones\add.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(SalaM.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\add.php', 110)
+ 2 APPPATH\Views\funciones\add.php(110): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\add.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 6 APPPATH\Controllers\Funciones.php(29): view('funciones/add', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 02:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 02:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 02:48:16 --> ErrorException: include(SalaM.php): Failed to open stream: No such file or directory
+[Method: GET, Route: funciones/add/]
+in APPPATH\Views\funciones\add.php on line 110.
+ 1 APPPATH\Views\funciones\add.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(SalaM.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\add.php', 110)
+ 2 APPPATH\Views\funciones\add.php(110): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\add.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/add', [], true)
+ 6 APPPATH\Controllers\Funciones.php(29): view('funciones/add', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->add()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 02:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 02:52:47 --> ErrorException: include(C:\xampp\php): Failed to open stream: Permission denied
+[Method: GET, Route: funciones]
+in APPPATH\Models\FuncionM.php on line 50.
+ 1 APPPATH\Models\FuncionM.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xampp\\php): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php', 50)
+ 2 APPPATH\Models\FuncionM.php(50): include()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FuncionM')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FuncionM')
+ 7 SYSTEMPATH\Config\Factories.php(290): class_exists('App\\Models\\FuncionM')
+ 8 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'FuncionM')
+ 9 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'FuncionM', [...])
+10 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+11 APPPATH\Controllers\Funciones.php(12): model('FuncionM')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 02:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 02:52:59 --> ErrorException: include(C:\xampp\php): Failed to open stream: Permission denied
+[Method: GET, Route: funciones]
+in APPPATH\Models\FuncionM.php on line 50.
+ 1 APPPATH\Models\FuncionM.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xampp\\php): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php', 50)
+ 2 APPPATH\Models\FuncionM.php(50): include()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FuncionM')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FuncionM')
+ 7 SYSTEMPATH\Config\Factories.php(290): class_exists('App\\Models\\FuncionM')
+ 8 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'FuncionM')
+ 9 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'FuncionM', [...])
+10 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+11 APPPATH\Controllers\Funciones.php(12): model('FuncionM')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 02:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 02:53:18 --> ErrorException: include(C:\xampp\php): Failed to open stream: Permission denied
+[Method: GET, Route: funciones]
+in APPPATH\Models\FuncionM.php on line 50.
+ 1 APPPATH\Models\FuncionM.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xampp\\php): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php', 50)
+ 2 APPPATH\Models\FuncionM.php(50): include()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FuncionM')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FuncionM')
+ 7 SYSTEMPATH\Config\Factories.php(290): class_exists('App\\Models\\FuncionM')
+ 8 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'FuncionM')
+ 9 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'FuncionM', [...])
+10 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+11 APPPATH\Controllers\Funciones.php(12): model('FuncionM')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 02:53:21 --> ErrorException: include(C:\xampp\php): Failed to open stream: Permission denied
+[Method: GET, Route: funciones]
+in APPPATH\Models\FuncionM.php on line 50.
+ 1 APPPATH\Models\FuncionM.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xampp\\php): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php', 50)
+ 2 APPPATH\Models\FuncionM.php(50): include()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FuncionM')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FuncionM')
+ 7 SYSTEMPATH\Config\Factories.php(290): class_exists('App\\Models\\FuncionM')
+ 8 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'FuncionM')
+ 9 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'FuncionM', [...])
+10 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+11 APPPATH\Controllers\Funciones.php(12): model('FuncionM')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 02:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 02:56:07 --> ErrorException: include(C:\xampp\php): Failed to open stream: Permission denied
+[Method: GET, Route: funciones]
+in APPPATH\Models\FuncionM.php on line 50.
+ 1 APPPATH\Models\FuncionM.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xampp\\php): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php', 50)
+ 2 APPPATH\Models\FuncionM.php(50): include()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FuncionM')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FuncionM')
+ 7 SYSTEMPATH\Config\Factories.php(290): class_exists('App\\Models\\FuncionM')
+ 8 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'FuncionM')
+ 9 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'FuncionM', [...])
+10 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+11 APPPATH\Controllers\Funciones.php(12): model('FuncionM')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 02:58:07 --> ErrorException: include(C:\xampp\php): Failed to open stream: Permission denied
+[Method: GET, Route: funciones]
+in APPPATH\Models\FuncionM.php on line 50.
+ 1 APPPATH\Models\FuncionM.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xampp\\php): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php', 50)
+ 2 APPPATH\Models\FuncionM.php(50): include()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FuncionM')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FuncionM')
+ 7 SYSTEMPATH\Config\Factories.php(290): class_exists('App\\Models\\FuncionM')
+ 8 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'FuncionM')
+ 9 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'FuncionM', [...])
+10 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+11 APPPATH\Controllers\Funciones.php(12): model('FuncionM')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 02:58:08 --> ErrorException: include(C:\xampp\php): Failed to open stream: Permission denied
+[Method: GET, Route: funciones]
+in APPPATH\Models\FuncionM.php on line 50.
+ 1 APPPATH\Models\FuncionM.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xampp\\php): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php', 50)
+ 2 APPPATH\Models\FuncionM.php(50): include()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TrabajoCine\\app\\Models\\FuncionM.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FuncionM')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FuncionM')
+ 7 SYSTEMPATH\Config\Factories.php(290): class_exists('App\\Models\\FuncionM')
+ 8 SYSTEMPATH\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'FuncionM')
+ 9 SYSTEMPATH\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'FuncionM', [...])
+10 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+11 APPPATH\Controllers\Funciones.php(12): model('FuncionM')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 02:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-22 02:58:42 --> mysqli_sql_exception: Can't update table 'funcion' in stored function/trigger because it is already used by statement which invoked this stored function/trigger in C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\TrabajoCine\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Fu...', 0)
+#1 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Fu...')
+#2 C:\xampp\htdocs\TrabajoCine\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Fu...')
+#3 C:\xampp\htdocs\TrabajoCine\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Fu...', Array, false)
+#4 C:\xampp\htdocs\TrabajoCine\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\TrabajoCine\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\TrabajoCine\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\TrabajoCine\app\Controllers\Funciones.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(933): App\Controllers\Funciones->insert()
+#9 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+#10 C:\xampp\htdocs\TrabajoCine\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\TrabajoCine\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\TrabajoCine\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\TrabajoCine\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\TrabajoCine\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-09-22 02:58:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Can't update table 'funcion' in stored function/trigger because it is already used by statement which invoked this stored function/trigger
+[Method: POST, Route: funciones/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Funcion` (`idPelicula`, `idSala`, `formato`, `horario`, `fecha`) VALUES (:idPelicula:, :idSala:, :formato:, :horario:, :fecha:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Funciones.php(66): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 02:58:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Can't update table 'funcion' in stored function/trigger because it is already used by statement which invoked this stored function/trigger
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Funcion` (`idPelicula`, `idSala`, `formato`, `horario`, `fecha`) VALUES (\'3\', \'10\', \'Chronophotographer\', \'20:00\', \'2024-09-25\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Funcion` (`idPelicula`, `idSala`, `formato`, `horario`, `fecha`) VALUES (\'3\', \'10\', \'Chronophotographer\', \'20:00\', \'2024-09-25\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Funcion` (`idPelicula`, `idSala`, `formato`, `horario`, `fecha`) VALUES (:idPelicula:, :idSala:, :formato:, :horario:, :fecha:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Funciones.php(66): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 02:58:42 --> [Caused by] mysqli_sql_exception: Can't update table 'funcion' in stored function/trigger because it is already used by statement which invoked this stored function/trigger
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Funcion` (`idPelicula`, `idSala`, `formato`, `horario`, `fecha`) VALUES (\'3\', \'10\', \'Chronophotographer\', \'20:00\', \'2024-09-25\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Funcion` (`idPelicula`, `idSala`, `formato`, `horario`, `fecha`) VALUES (\'3\', \'10\', \'Chronophotographer\', \'20:00\', \'2024-09-25\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Funcion` (`idPelicula`, `idSala`, `formato`, `horario`, `fecha`) VALUES (\'3\', \'10\', \'Chronophotographer\', \'20:00\', \'2024-09-25\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Funcion` (`idPelicula`, `idSala`, `formato`, `horario`, `fecha`) VALUES (:idPelicula:, :idSala:, :formato:, :horario:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Funciones.php(66): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 03:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 03:26:25 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: funciones/edit/13]
+in APPPATH\Views\funciones\edit.php on line 27.
+ 1 APPPATH\Views\funciones\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/edit', [], true)
+ 5 APPPATH\Controllers\Funciones.php(90): view('funciones/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 03:26:31 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: funciones/edit/13]
+in APPPATH\Views\funciones\edit.php on line 27.
+ 1 APPPATH\Views\funciones\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/edit', [], true)
+ 5 APPPATH\Controllers\Funciones.php(90): view('funciones/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 03:26:37 --> ErrorException: Undefined property: stdClass::$numero
+[Method: GET, Route: funciones/edit/9]
+in APPPATH\Views\funciones\edit.php on line 27.
+ 1 APPPATH\Views\funciones\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$numero', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\funciones\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('funciones/edit', [], true)
+ 5 APPPATH\Controllers\Funciones.php(90): view('funciones/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 03:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 03:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 03:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 03:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 03:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 04:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 04:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 04:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 05:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 05:21:00 --> ErrorException: Undefined variable $sala
+[Method: GET, Route: funciones]
+in APPPATH\Controllers\Funciones.php on line 32.
+ 1 APPPATH\Controllers\Funciones.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sala', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Funciones.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Funciones->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funciones))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 05:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 05:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 19:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 20:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 21:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 22:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 22:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 22:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 22:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 22:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 22:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 22:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 22:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 22:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-22 22:13:35 --> ErrorException: Attempt to read property "idPrecioEntrada" on array
+[Method: GET, Route: precioEntrada]
+in APPPATH\Views\precioE\show.php on line 23.
+ 1 APPPATH\Views\precioE\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idPrecioEntrada" on array', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('precioE/show', [], true)
+ 5 APPPATH\Controllers\PrecioEntrada.php(18): view('precioE/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrecioEntrada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrecioEntrada))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 22:14:33 --> ErrorException: Attempt to read property "idPrecioEntrada" on array
+[Method: GET, Route: precioEntrada]
+in APPPATH\Views\precioE\show.php on line 23.
+ 1 APPPATH\Views\precioE\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idPrecioEntrada" on array', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('precioE/show', [], true)
+ 5 APPPATH\Controllers\PrecioEntrada.php(18): view('precioE/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrecioEntrada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrecioEntrada))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 22:15:15 --> ErrorException: Attempt to read property "idPrecioEntrada" on array
+[Method: GET, Route: precioEntrada]
+in APPPATH\Views\precioE\show.php on line 23.
+ 1 APPPATH\Views\precioE\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idPrecioEntrada" on array', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('precioE/show', [], true)
+ 5 APPPATH\Controllers\PrecioEntrada.php(18): view('precioE/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrecioEntrada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrecioEntrada))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 22:15:38 --> ErrorException: Attempt to read property "idPrecioEntrada" on array
+[Method: GET, Route: precioEntrada]
+in APPPATH\Views\precioE\show.php on line 23.
+ 1 APPPATH\Views\precioE\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idPrecioEntrada" on array', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('precioE/show', [], true)
+ 5 APPPATH\Controllers\PrecioEntrada.php(18): view('precioE/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrecioEntrada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrecioEntrada))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 22:16:39 --> ErrorException: Attempt to read property "idPrecioEntrada" on array
+[Method: GET, Route: precioEntrada]
+in APPPATH\Views\precioE\show.php on line 23.
+ 1 APPPATH\Views\precioE\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idPrecioEntrada" on array', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('precioE/show', [], true)
+ 5 APPPATH\Controllers\PrecioEntrada.php(18): view('precioE/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrecioEntrada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrecioEntrada))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 22:16:39 --> ErrorException: Attempt to read property "idPrecioEntrada" on array
+[Method: GET, Route: precioEntrada]
+in APPPATH\Views\precioE\show.php on line 23.
+ 1 APPPATH\Views\precioE\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idPrecioEntrada" on array', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('precioE/show', [], true)
+ 5 APPPATH\Controllers\PrecioEntrada.php(18): view('precioE/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrecioEntrada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrecioEntrada))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-22 22:16:40 --> ErrorException: Attempt to read property "idPrecioEntrada" on array
+[Method: GET, Route: precioEntrada]
+in APPPATH\Views\precioE\show.php on line 23.
+ 1 APPPATH\Views\precioE\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idPrecioEntrada" on array', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\precioE\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('precioE/show', [], true)
+ 5 APPPATH\Controllers\PrecioEntrada.php(18): view('precioE/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrecioEntrada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrecioEntrada))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-22 23:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-22 23:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

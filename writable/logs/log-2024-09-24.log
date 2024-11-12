@@ -1,0 +1,181 @@
+WARNING - 2024-09-24 01:47:23 --> [DEPRECATED] Using ${var} in strings is deprecated, use {$var} instead in APPPATH\Views\ventas\add.php on line 14.
+ 1 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 4 APPPATH\Controllers\Ventas.php(70): view('ventas/add', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+WARNING - 2024-09-24 01:47:23 --> [DEPRECATED] Using ${var} in strings is deprecated, use {$var} instead in APPPATH\Views\ventas\add.php on line 14.
+ 1 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 4 APPPATH\Controllers\Ventas.php(70): view('ventas/add', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 01:47:23 --> ErrorException: Undefined variable $cantidadAsientos
+[Method: GET, Route: ventas/add/]
+in APPPATH\Views\ventas\add.php on line 9.
+ 1 APPPATH\Views\ventas\add.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cantidadAsientos', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/add', [], true)
+ 5 APPPATH\Controllers\Ventas.php(70): view('ventas/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-24 01:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:43:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ventas/edit.php"
+[Method: GET, Route: ventas/edit/10]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 3 APPPATH\Controllers\Ventas.php(131): view('ventas/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('10')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 16:01:38 --> ErrorException: Undefined property: stdClass::$nombre
+[Method: GET, Route: ventas/edit/10]
+in APPPATH\Views\ventas\edit.php on line 37.
+ 1 APPPATH\Views\ventas\edit.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(131): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('10')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 16:01:42 --> ErrorException: Undefined property: stdClass::$nombre
+[Method: GET, Route: ventas/edit/10]
+in APPPATH\Views\ventas\edit.php on line 37.
+ 1 APPPATH\Views\ventas\edit.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(131): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('10')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 16:03:35 --> ErrorException: Undefined array key "idVenta"
+[Method: POST, Route: ventas/update]
+in APPPATH\Controllers\Ventas.php on line 137.
+ 1 APPPATH\Controllers\Ventas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idVenta"', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Ventas.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 16:06:54 --> ErrorException: Undefined array key "idVenta"
+[Method: POST, Route: ventas/update]
+in APPPATH\Controllers\Ventas.php on line 137.
+ 1 APPPATH\Controllers\Ventas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idVenta"', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Ventas.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 16:10:30 --> ErrorException: Undefined array key "idVenta"
+[Method: POST, Route: ventas/update]
+in APPPATH\Controllers\Ventas.php on line 137.
+ 1 APPPATH\Controllers\Ventas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idVenta"', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Controllers\\Ventas.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 16:10:33 --> ErrorException: Undefined variable $idVenta
+[Method: GET, Route: ventas/edit/10]
+in APPPATH\Views\ventas\edit.php on line 12.
+ 1 APPPATH\Views\ventas\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(131): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('10')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 16:10:36 --> ErrorException: Undefined variable $idVenta
+[Method: GET, Route: ventas/edit/10]
+in APPPATH\Views\ventas\edit.php on line 12.
+ 1 APPPATH\Views\ventas\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(131): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('10')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 16:14:23 --> ErrorException: Undefined variable $idVenta
+[Method: GET, Route: ventas/edit/10]
+in APPPATH\Views\ventas\edit.php on line 6.
+ 1 APPPATH\Views\ventas\edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(131): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('10')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+CRITICAL - 2024-09-24 16:14:39 --> ErrorException: Undefined variable $idVenta
+[Method: GET, Route: ventas/edit/10]
+in APPPATH\Views\ventas\edit.php on line 12.
+ 1 APPPATH\Views\ventas\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idVenta', 'C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\TrabajoCine\\app\\Views\\ventas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ventas/edit', [], true)
+ 5 APPPATH\Controllers\Ventas.php(131): view('ventas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas->edit('10')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\TrabajoCine\\public\\index.php')
+INFO - 2024-09-24 16:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
